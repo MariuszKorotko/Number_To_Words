@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} ConvertResult {% endblock %}
+
+{% block content %}
+<div class="panel panel-primary">
+    <div class="panel-heading"><strong>Wynik:</strong></div>
+    <div class="panel-body"><strong>Wprowadzona liczba: </strong>
+        {{ number }}
+    </div>
+    <div class="panel-body"><strong>Zapis słowny: </strong>
+        {{ verbal_notation }}
+    </div>
+</div>
+{% endblock %}

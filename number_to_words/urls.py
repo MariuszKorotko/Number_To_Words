@@ -22,5 +22,5 @@ app_name = 'number_to_words_app'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', NumberToWords.as_view(), name='number'),
+    url(r'^$', NumberToWords.as_view(), name='number_to_words'),
 ]

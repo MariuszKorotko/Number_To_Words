@@ -22,4 +22,4 @@ class NumberToWords(View):
                 'number': number,
                 'verbal_notation': verbal_notation,
             }
-            return render(request,	"result.html", context)
+            return render(request, "result.html", context)

@@ -24,7 +24,6 @@ class NumberToWords(View):
             }
             return render(request, "result.html", context)
         else:
-            form_number = NumberForm()
             context = {
                 'form_number': form_number
             }

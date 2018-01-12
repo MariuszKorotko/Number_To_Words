@@ -23,3 +23,9 @@ class NumberToWords(View):
                 'verbal_notation': verbal_notation,
             }
             return render(request, "result.html", context)
+        else:
+            form_number = NumberForm()
+            context = {
+                'form_number': form_number
+            }
+            return render(request, 'input_number_form.html', context)

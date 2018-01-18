@@ -1,30 +1,30 @@
-def number_to_words(number):
-    """Convert int number into string - return word in Polish"""
-
-    ONES = ('', 'jeden ', 'dwa ', 'trzy ', 'cztery ', 'pięć ',
+ONES = ('', 'jeden ', 'dwa ', 'trzy ', 'cztery ', 'pięć ',
             'sześć ', 'siedem ', 'osiem ', 'dziewięć ')
 
-    TENS = ('', 'jedenaście ', 'dwanaście ', 'trzynaście ', 'czternaście ',
-            'piętnaście ', 'szesnaście ', 'siedemnaście ', 'osiemnaście ',
-            'dziewiętnaście ')
+TENS = ('', 'jedenaście ', 'dwanaście ', 'trzynaście ', 'czternaście ',
+        'piętnaście ', 'szesnaście ', 'siedemnaście ', 'osiemnaście ',
+        'dziewiętnaście ')
 
-    TWENTIES = ('', 'dziesięć ', 'dwadzieścia ', 'trzydzieści ',
-                  'czterdzieści ',
-                'pięćdziesiąt ', 'sześćdziesiąt ', 'siedemdziesiąt ',
-                'osiemdziesiąt ', 'dziewięćdziesiąt ')
+TWENTIES = ('', 'dziesięć ', 'dwadzieścia ', 'trzydzieści ', 'czterdzieści ',
+            'pięćdziesiąt ', 'sześćdziesiąt ', 'siedemdziesiąt ',
+            'osiemdziesiąt ', 'dziewięćdziesiąt ')
 
-    HUNDREDS = ('', 'sto ', 'dwieście ', 'trzysta ', 'czterysta ', 'pięćset ',
-                'sześćset ', 'siedemset ', 'osiemset ', 'dziewięćset ')
+HUNDREDS = ('', 'sto ', 'dwieście ', 'trzysta ', 'czterysta ', 'pięćset ',
+            'sześćset ', 'siedemset ', 'osiemset ', 'dziewięćset ')
 
-    GRAMMAR_GROUPS = (
-        ('', '', ''),
-        ('tysiąc ', 'tysiące ', 'tysięcy '),
-        ('milion ', 'miliony ', 'milionów '),
-        ('miliard ', 'miliardy ', 'miliardów '),
-        ('bilion ', 'biliony ', 'bilionów '),
-        ('biliard ', 'biliardy ', 'biliardów '),
-        ('trylion ', 'tryliony ', 'tryliardów ')
-    )
+GRAMMAR_GROUPS = (
+    ('', '', ''),
+    ('tysiąc ', 'tysiące ', 'tysięcy '),
+    ('milion ', 'miliony ', 'milionów '),
+    ('miliard ', 'miliardy ', 'miliardów '),
+    ('bilion ', 'biliony ', 'bilionów '),
+    ('biliard ', 'biliardy ', 'biliardów '),
+    ('trylion ', 'tryliony ', 'tryliardów ')
+)
+
+
+def number_to_words(number):
+    """Convert int number into string - return word in Polish"""
 
     verbal_notation = ''
 

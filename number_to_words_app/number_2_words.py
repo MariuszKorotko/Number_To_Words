@@ -25,7 +25,6 @@ GRAMMAR_GROUPS = (
 
 def number_to_words(number):
     """Convert int number into string - return word in Polish"""
-
     verbal_notation = ''
 
     if number == 0:

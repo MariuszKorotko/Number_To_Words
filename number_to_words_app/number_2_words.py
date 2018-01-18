@@ -54,9 +54,10 @@ def number_to_words(number):
         else:
             grammar_group = 2
         if grammar_group >= 0 and hundreds + tens + twenties + ones > 0:
-            verbal_notation = HUNDREDS[hundreds] + TWENTIES[tens] + \
-                              TENS[twenties] + ONES[ones] + \
-                              GRAMMAR_GROUPS[i][grammar_group] + verbal_notation
+            verbal_notation = ''.join([HUNDREDS[hundreds], TWENTIES[tens], \
+                                      TENS[twenties], ONES[ones], \
+                                      GRAMMAR_GROUPS[i][grammar_group],
+                                      verbal_notation])
         i = i + 1
         number = number // 1000
-    return sign + verbal_notation
+    return ''.join([sign, verbal_notation])
